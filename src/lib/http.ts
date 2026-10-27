@@ -8,7 +8,7 @@ export class HttpError extends Error {
 }
 
 /** Wikimedia asks API clients to identify themselves; browsers can't set User-Agent. */
-export const WIKIMEDIA_HEADERS = { 'Api-User-Agent': 'TravelCompanionPWA/0.1 (personal use)' };
+export const WIKIMEDIA_HEADERS = { 'Api-User-Agent': 'TravelCompanionPWA/0.1 (https://github.com/tony-hagerty/offline-travel-companion)' };
 
 /**
  * fetch() that rejects on non-2xx responses and gives up after `timeoutMs`.
