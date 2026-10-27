@@ -7,7 +7,12 @@ import { VitePWA } from 'vite-plugin-pwa';
 // `adb reverse` (phone testing over USB) can't reach.
 const host = '127.0.0.1';
 
+// GitHub Pages serves the app from a subfolder (/offline-travel-companion/); the deploy
+// workflow sets BASE_PATH. Locally it's served from the root.
+const base = process.env.BASE_PATH ?? '/';
+
 export default defineConfig({
+  base,
   server: { host },
   preview: { host },
   plugins: [
@@ -19,7 +24,8 @@ export default defineConfig({
         name: 'Travel Companion',
         short_name: 'Trips',
         description: 'Offline guide to food, sights, transit, and weather for your trips.',
-        start_url: '/',
+        start_url: base,
+        scope: base,
         display: 'standalone',
         background_color: '#f6f5f2',
         theme_color: '#0f766e',
