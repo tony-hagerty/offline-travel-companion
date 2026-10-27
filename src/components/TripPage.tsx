@@ -14,7 +14,7 @@ import { WeatherTab } from './WeatherTab';
 
 const TABS: { id: Section; label: string }[] = [
   { id: 'eat', label: 'Eat' },
-  { id: 'see', label: 'See' },
+  { id: 'see', label: 'Explore' },
   { id: 'transit', label: 'Transit' },
   { id: 'weather', label: 'Weather' },
   { id: 'about', label: 'About' },
@@ -245,7 +245,7 @@ function EventsSection({ trip, units }: { trip: Trip; units: Units }) {
           </ul>
         </details>
       )}
-      <h2 className="section-title">Places to see</h2>
+      <h2 className="section-title">Places to visit</h2>
     </section>
   );
 }

@@ -46,7 +46,7 @@ separately. "Where am I?" also only updates on a tap. Pull-to-refresh is off.
    a calendar popup or typed into From/To boxes, with a "Just today" shortcut;
    Walk / Car toggle (sets search distance).
 3. **Trip page** — photo header, dates, "saved offline" status, Refresh button.
-   Tabs: **Eat · See · Transit · Weather · About**. See opens with events during
+   Tabs: **Eat · Explore · Transit · Weather · About**. Explore opens with events during
    the trip. Tap any item for details: photo, description, hours or event dates,
    price, address, phone, website, directions.
 
